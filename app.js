@@ -6,20 +6,23 @@ let photoArray = [];
 // Create Elements For Links & Photos, Add To Dom
 function displayPhotos() {
     // Run function For Each Object in PhotoArray
-    photoArray.forEach( (photo) => {
+    for(let photo of photoArray) {
+
+    // }
+    // photoArray.forEach( (photo) => {
         // Craete <a> To Link To Unsplash
         const item = document.createElement('a');
         item.setAttribute('href', photo.links.html);
         item.setAttribute('target', '_blank');
         //c Create <img> For Photo
         const img = document.createElement('img');
-        img.setAttribute('src', photo.url.regular);
+        img.setAttribute('src', photo.urls.regular);
         img.setAttribute('alt', photo.alt_description);
         img.setAttribute('title', photo.alt_description)
         // Put <img> Inside <a>, Then Put Both Inside imgContainer Element
         item.appendChild(img);
         imgContainer.appendChild(item);
-    });
+    };
 };
 
 
