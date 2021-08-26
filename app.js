@@ -1,6 +1,7 @@
 const imgContainer = document.querrySelector('#img-container');
 const loader = document.querrySelector('#loader');
 
+let photoArray = [];
 
 // Unsplash Api
 const count = 10;
