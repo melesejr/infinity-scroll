@@ -1,3 +1,7 @@
+const imgContainer = document.querrySelector('#img-container');
+const loader = document.querrySelector('#loader');
+
+
 // Unsplash Api
 const count = 10;
 const apiKey = 'bv5VfP7Ab13j7yXXS9PBC_HzLvIRZgUFhUs_VeMYikA'; 
